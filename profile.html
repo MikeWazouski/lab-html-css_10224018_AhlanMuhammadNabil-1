@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STT Cipasung</title>
+  <title>Profil STT Cipasung</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
+  <header id="main-header">
     <h1>STT Cipasung</h1>
     <p>Sekolah Tinggi Teknologi Cipasung, Tasikmalaya</p>
     <nav>
@@ -22,21 +23,21 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="card">
       <h2>Tentang Kami</h2>
       <p>STT Cipasung adalah sekolah tinggi teknologi di Tasikmalaya, Jawa Barat, yang didirikan pada tahun 1997 di bawah Yayasan Pondok Pesantren Cipasung.</p>
       <p>Kampus ini menyelenggarakan program sarjana di bidang teknik dan komputasi.</p>
     </section>
 
-    <section id="programs">
+    <section id="programs" class="card">
       <h2>Program Studi</h2>
       <table>
         <thead>
           <tr>
-            <th>Program Studi</th>
-            <th>Jenjang</th>
-            <th>Masa Studi</th>
-            <th>Fokus</th>
+            <th scope="col">Program Studi</th>
+            <th scope="col">Jenjang</th>
+            <th scope="col">Masa Studi</th>
+            <th scope="col">Fokus</th>
           </tr>
         </thead>
         <tbody>
@@ -56,7 +57,7 @@
       </table>
     </section>
 
-    <section id="facilities">
+    <section id="facilities" class="card">
       <h2>Fasilitas</h2>
       <ul>
         <li>Laboratorium komputer</li>
@@ -65,10 +66,10 @@
         <li>Masjid</li>
         <li>Sekretariat kegiatan mahasiswa</li>
       </ul>
-      <img src="https://placehold.co/600x300?text=STT+Cipasung" alt="Gedung dan suasana lingkungan kampus STT Cipasung Tasikmalaya">
+      <img src="https://placehold.co/600x300?text=STT+Cipasung" alt="Foto lingkungan kampus dan fasilitas STT Cipasung Tasikmalaya">
     </section>
 
-    <section id="events">
+    <section id="events" class="card">
       <h2>Agenda Mendatang</h2>
       <article>
         <h3>Informatics Coding Day</h3>
@@ -82,25 +83,26 @@
       </article>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="card">
       <h2>Kontak</h2>
       <address>
-        <p>Jalan Raya Cisinga KM 1, Cilampunghilir, Padakembang, Tasikmalaya, Jawa Barat 46466</p>
-        <p>Email: <a href="mailto:info@sttcipasung.ac.id">info@sttcipasung.ac.id</a> · Telepon: (0265) 2550424</p>
+        Jalan Raya Cisinga KM 1, Cilampunghilir, Padakembang, Tasikmalaya, Jawa Barat 46466<br>
+        Email: <a href="mailto:info@sttcipasung.ac.id">info@sttcipasung.ac.id</a><br>
+        Telepon: (0265) 2550424
       </address>
 
       <form action="#" method="post">
         <p>
-          <label for="nama">Nama</label>
-          <input type="text" id="nama" name="nama" required>
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required>
         </p>
         <p>
-          <label for="email">Email</label>
+          <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
         </p>
         <p>
-          <label for="pesan">Pesan</label>
-          <textarea id="pesan" name="pesan" rows="4" required></textarea>
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </p>
         <p>
           <button type="submit">Kirim</button>
